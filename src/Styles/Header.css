@@ -65,8 +65,8 @@
   }
 
   .logo-img{
-    width: 6.944vw;
-    height: 6.944vw;
+    width: 9.028vw;
+    height: 9.028vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,10 +74,10 @@
   }
 
   .logo{
-    width: 5.556vw;
-    height: 5.556vw;
+    width: 9.028vw;
+    height: 9.028vw;
     background: white;
-    padding: 5px;
+    padding: 1.389vw;
     border-radius: 50%;
   }
   
