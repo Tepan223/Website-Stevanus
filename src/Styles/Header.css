@@ -3,3 +3,10 @@
     height: 4.167vw;
 }
 
+@media (max-width: 720px) {
+    .header {
+      height: 60px;
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
