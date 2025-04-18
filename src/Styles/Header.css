@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: 4.948vw;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to right, #2c5364, #000000, #2c5364 35%, #000000,#2c5364);
     color: white;
     position: fixed;
     display: flex;
@@ -22,7 +22,7 @@
   .title {
     font-size: 1.458vw;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     background: none;
   }
   
@@ -37,7 +37,7 @@
     color: #ffffff;
     font-weight: 700;
     font-size:  1.458vw;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    transition: color 0.3s ease, 0.3s ease;
     position: relative;
     background: none;
   }
@@ -63,32 +63,39 @@
   .mb{
     display: none;
   }
+
+  .logo{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50;
+    padding: 10px;
+  }
+
+  a img{
+    border-radius: 50%;
+  }
   
   @media (max-width: 768px) {
     .header {
       top: auto;
       bottom: 0;
-      height: 60px;
+      height: 10vw;
+      width: 86.111vw;
+      background: linear-gradient(to right, #2c5364,#000000, #2c5364, #000000, #2c5364);
+      margin: 0 7%;
+      margin-bottom: 3vw;
+      border-radius: 5vw;
+      padding: 0vw 13vw;
     }
-  
-    .container-header {
-      flex-direction: column;
-      justify-content: center;
+    
+    .pc{
+      display: none;
     }
-  
-    .title {
-      font-size: 1.2rem;
-    }
-  
-    .navigation {
+    
+    .mb{
       display: flex;
-      justify-content: center;
-      margin-top: 5px;
-    }
-  
-    .navigation a {
-      margin: 0 10px;
-      font-size: 0.9rem;
+      width: 100%;
     }
   }
   
