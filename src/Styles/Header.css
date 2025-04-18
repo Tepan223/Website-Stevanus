@@ -71,6 +71,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: transform 0.2s ease;
+  }
+
+  .logo-img:active {
+    transform: scale(1.2);
   }
 
   .logo{
@@ -79,6 +84,10 @@
     background: white;
     padding: 1.389vw;
     border-radius: 25%;
+  }
+
+  .logo:active {
+    transform: scale(1.1);
   }
   
   @media (max-width: 768px) {
