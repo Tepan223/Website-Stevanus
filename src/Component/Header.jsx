@@ -12,10 +12,10 @@ function Header () {
                     <a href="#contact">Contact</a>
                 </div>
                 <div className='navigation mb'>
-                    <a href="#home"><img src="Home.svg" alt="" className='logo'/></a>
-                    <a href="#about">About & Skill</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home" className='logo-img'><img src="Home.svg" alt="" className='logo'/></a>
+                    <a href="#about" className='logo-img'><img src="About.svg" alt="" className='logo'/></a>
+                    <a href="#portfolio" className='logo-img'><img src="Portfolio.svg" alt="" className='logo'/></a>
+                    <a href="#contact"  className='logo-img'><img src="Contact.svg" alt="" className='logo'/></a>
                 </div>
             </div>
         </div>
