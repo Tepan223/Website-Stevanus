@@ -1,5 +1,6 @@
 .home{
     height: 100vh;
     max-height: 100vh;
-    background-color: red;
+    padding: 4vw 5vw 4vw 5vw;
+    color: white;
 }

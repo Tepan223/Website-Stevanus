@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    padding: 0 5vw;
+    border-bottom: 0.150vw solid #2c5364;
   }
   
   .container-header {
@@ -97,7 +99,7 @@
   
   @media (max-width: 768px) {
     .header {
-      position: fixed;
+      position: fixed ! important;
       top: auto;
       bottom: 0;
       height: 15vw;
@@ -107,16 +109,16 @@
       margin-bottom: 3vw;
       border-radius: 5vw;
       padding: 0vw 13vw;
-      box-shadow: 0 0 20px #4ecdc4, 0 0 40px #349090;
+      box-shadow: 0 0 1.042vw #4ecdc4, 0 0 2.083vw #349090;
       animation: glow-border 1.5s infinite alternate;
     }
 
     @keyframes glow-border {
       0% {
-        box-shadow: 0 0 20px #4ecdc4, 0 0 40px #349090;
+        box-shadow: 0 0 1.042vw #4ecdc4, 0 0 2.083vw #349090;
       }
       100% {
-        box-shadow: 0 0 40px #4ecdc4, 0 0 60px #349090;
+        box-shadow: 0 0 2.083vw #4ecdc4, 0 0 3.125vw #349090;
       }
     }
     
