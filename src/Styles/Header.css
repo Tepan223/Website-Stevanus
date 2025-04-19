@@ -42,7 +42,7 @@
     background: none;
   }
   
-  .navigation a::after {
+  .pc a::after {
     content: '';
     display: flex;
     height: 0.150vw;
