@@ -4,3 +4,104 @@
     padding: 4vw 5vw 4vw 5vw;
     color: white;
 }
+
+.title1-home{
+    font-size: 3vw;
+}
+
+.title2-home{
+    font-size: 5vw;
+}
+
+.title3-home{
+    font-size: 3vw;
+    margin-bottom: 3.5vw;
+}
+
+.description-home{
+    font-size: 1.6vw;
+}
+
+.img-contact-home{
+    width: 3vw;
+    height: 3vw;
+}
+
+.logo-img-home{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content-icon-home-whatsapp,
+.content-icon-home-instagram,
+.content-icon-home-tiktok,
+.content-icon-home-email,
+.content-icon-home-github{
+    width: 5vw;
+    height: 5vw;
+    border: 3px solid #70f0fe;
+    padding: 1.042vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 4vw;
+    cursor: pointer;
+}
+
+.content-contact-home{
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 4vw;
+}
+
+.content-icon-home-whatsapp:hover{
+    box-shadow: 0 0 15px #25D366, 0 0 30px #25D366;
+    transform: scale(1.2);
+}
+
+.content-icon-home-instagram:hover{
+    box-shadow: 0 0 15px #E1306C, 0 0 30px #E1306C;
+    transform: scale(1.2);
+}
+
+.content-icon-home-tiktok:hover{
+    box-shadow: 0 0 15px #000000, 0 0 30px #000000;
+    transform: scale(1.2);
+}
+
+.content-icon-home-email:hover{
+    box-shadow: 0 0 15px #70f0fe, 0 0 30px #ea4335;
+    transform: scale(1.2);
+}
+
+.content-icon-home-github:hover{
+    box-shadow: 0 0 15px #70f0fe, 0 0 30px   #6e40c9;
+    transform: scale(1.2);
+}
+
+.btn-home{
+    width: 15vw;
+    height: 5vw;
+    border: 3px solid #70f0fe;
+    border-radius: 1.5vw;
+    background-color: #70f0fe;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-top: 1vw;
+    box-shadow: 0 0 10px #70f0fe, 0 0 20px #70f0fe;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-home:hover {
+    transform: scale(1.05);
+    background-color: #0fd2e5;
+    box-shadow: 0 0 20px #70f0fe, 0 0 30px #70f0fe, 0 0 40px #70f0fe;
+    color: #ffffff;
+}

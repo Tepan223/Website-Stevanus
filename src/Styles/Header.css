@@ -99,7 +99,7 @@
   
   @media (max-width: 768px) {
     .header {
-      position: fixed ! important;
+      position: fixed;
       top: auto;
       bottom: 0;
       height: 15vw;
