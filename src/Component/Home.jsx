@@ -41,7 +41,7 @@ function Home () {
                         </div>
                     </div>
                     <div className='content-btn-home'>
-                        <button className='btn-home'>More About Me</button>
+                        <a href="#about" className='btn-home'>More About Me</a>
                     </div>
                 </div>
                 <div className='content-right-home'></div>
