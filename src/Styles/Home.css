@@ -2,7 +2,7 @@
     height: 100vh;
     max-height: 100vh;
     padding: 4vw 5vw 4vw 5vw;
-    color: white;
+    color: white;    
 }
 
 .title1-home{
@@ -106,7 +106,9 @@
     color: #ffffff;
 }
 
-.content-contact-home{
+.content-left-home{
+    height: 85vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
