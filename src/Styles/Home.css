@@ -1,2 +1,5 @@
 .home{
+    height: 100vh;
+    max-height: 100vh;
+    background-color: red;
 }

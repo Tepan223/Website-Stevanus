@@ -3,7 +3,6 @@
     height: 4.948vw;
     background: linear-gradient(to right, #2c5364, #000000, #2c5364 35%, #000000,#2c5364);
     color: white;
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,10 +19,15 @@
   }
   
   .title {
-    font-size: 1.458vw;
+    font-size: 2.2vw;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     background: none;
+    transition: all 0.3s ease;
+  }
+
+  .title:hover{
+    transform: scale(1.1);
   }
   
   .navigation{
