@@ -105,3 +105,8 @@
     box-shadow: 0 0 20px #70f0fe, 0 0 30px #70f0fe, 0 0 40px #70f0fe;
     color: #ffffff;
 }
+
+.content-contact-home{
+    display: flex;
+    align-items: center;
+}
