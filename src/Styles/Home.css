@@ -3,8 +3,12 @@
     max-height: 100vh;
     padding: 4vw 5vw 4vw 5vw;
     color: white;    
+}
+
+.content-home{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .title1-home{
@@ -108,10 +112,105 @@
     font-size: 1.5vw;
     cursor: pointer;
     transition: all 0.4s ease, box-shadow 0.4s ease;
-    margin-right: 1.5vw;
-    margin-top: 4vw;
     text-decoration: none;
     background-color: #70f0fe;
     color: black;
     font-weight: 700;
+}
+
+.img-home{
+    width: 35vw;
+    height: 35vw;
+    display: flex;
+    filter: drop-shadow(0 0 0.781vw #70f0fe);
+    transition: all 0.4s ease;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .img-home{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .content-home{
+        flex-direction: column-reverse;
+        gap: 7vw;
+    }
+
+    .content-left-home{
+        width: 100%;
+    }
+
+    .title1-home{
+        font-size: 8vw;
+    }
+
+    .title2-home{
+        font-size: 11vw;
+    }
+
+    .title3-home{
+        font-size: 6vw;
+    }
+
+    .description-home{
+        font-size: 5vw;
+    }
+
+    .content-contact-home{
+        gap: 4vw;
+    }
+
+    .logo-img-home{
+        width: 8vw;
+        height: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    
+    .content-icon-home-whatsapp,
+    .content-icon-home-instagram,
+    .content-icon-home-tiktok,
+    .content-icon-home-email,
+    .content-icon-home-github{
+        width: 10vw;
+        height: 10vw;
+        border: 0.156vw solid #70f0fe;
+        padding: 1.042vw;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 4vw;
+        cursor: pointer;
+    }
+
+    .content-contact-home{
+        justify-content: space-around;
+        margin-top: 3vw;
+    }
+
+    .btn-home{
+        border: 0.156vw solid #70f0fe;
+        padding: 3vw 3vw;
+        border-radius: 3vw;
+        color: #70f0fe;
+        font-size: 4vw;
+        cursor: pointer;
+        transition: all 0.4s ease, box-shadow 0.4s ease;
+        text-decoration: none;
+        background-color: #70f0fe;
+        color: black;
+        font-weight: 700;
+    }
+
+    .content-btn-home{
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw;
+    }
 }

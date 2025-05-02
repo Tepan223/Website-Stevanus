@@ -44,7 +44,9 @@ function Home () {
                         <a href="#about" className='btn-home'>More About Me</a>
                     </div>
                 </div>
-                <div className='content-right-home'></div>
+                <div className='content-right-home'>
+                    <img src="Corozan.png" alt="" className='img-home'/>
+                </div>
             </div>
         </div>
         </>
