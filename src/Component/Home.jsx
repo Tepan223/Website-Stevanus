@@ -1,5 +1,73 @@
-import '../Styles/Home.css'
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import '../Styles/Home.css';
+
 function Home () {
+    useEffect(() => {
+        const isMobile = window.innerWidth < 768;
+        const tl = gsap.timeline();
+
+        if (isMobile) {
+            tl.fromTo('.title1-home',
+                { opacity: 0, y: -30 },
+                { opacity: 1, y: 0, duration: 0.3 }
+            )
+            .fromTo('.title2-home',
+                { opacity: 0, y: -30 },
+                { opacity: 1, y: 0, duration: 0.3 }
+            )
+            .fromTo('.title3-home',
+                { opacity: 0, y: -30 },
+                { opacity: 1, y: 0, duration: 0.3 }
+            )
+            .fromTo('.description-home',
+                { opacity: 0 },
+                { opacity: 1, duration: 0.2 }
+            )
+            .fromTo('.content-contact-home > div',
+                { opacity: 0, y: 10 },
+                { opacity: 1, y: 0, duration: 0.2, stagger: 0.05 }
+            )
+            .fromTo('.btn-home',
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 0.3 }
+            )
+            .fromTo('.img-home',
+                { opacity: 0, scale: 0.6 },
+                { opacity: 1, scale: 1, duration: 0.4 }
+            );
+        } else {
+            tl.fromTo('.title1-home',
+                { opacity: 0, y: -50 },
+                { opacity: 1, y: 0, duration: 0.5 }
+            )
+            .fromTo('.title2-home',
+                { opacity: 0, x: -50 },
+                { opacity: 1, x: 0, duration: 0.5 }
+            )
+            .fromTo('.title3-home',
+                { opacity: 0, x: 50 },
+                { opacity: 1, x: 0, duration: 0.5 }
+            )
+            .fromTo('.description-home',
+                { opacity: 0 },
+                { opacity: 1, duration: 0.4 }
+            )
+            .fromTo('.content-contact-home > div',
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.3, stagger: 0.1 } 
+            )
+            .fromTo('.btn-home',
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 0.5 }
+            )
+            .fromTo('.img-home',
+                { opacity: 0, scale: 0.7 },
+                { opacity: 1, scale: 1, duration: 0.6 }
+            );
+        }
+    }, []);
+
     return (
         <>
         <div className='home' id='home'>
@@ -53,4 +121,4 @@ function Home () {
     )
 }
 
-export default Home
+export default Home;

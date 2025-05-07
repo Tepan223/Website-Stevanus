@@ -40,8 +40,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 
 .content-icon-home-whatsapp,
 .content-icon-home-instagram,
@@ -131,6 +131,14 @@
     transition: all 0.4s ease;
     border-radius: 50%;
 }
+
+.content-right-home {
+    transition: transform 0.4s ease;
+  }
+  
+  .content-right-home:hover {
+    transform: scale(1.05);
+  }
 
 @media screen and (max-width: 768px) {
     .home{
