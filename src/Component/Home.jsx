@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
 import '../Styles/Home.css';
+
+gsap.registerPlugin(TextPlugin);
 
 function Home () {
     useEffect(() => {
@@ -66,6 +69,25 @@ function Home () {
                 { opacity: 1, scale: 1, duration: 0.4 }
             );
         }
+
+        const typeTexts = ["Web Developer", "Mobile Developer", "UI Designer"];
+        const masterTl = gsap.timeline({ repeat: -1 });
+
+        typeTexts.forEach(text => {
+            const tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
+            tl.to('.type-write1', {
+                duration: 1,
+                text: text,
+                ease: 'none'
+            });
+            tl.to('.type-write2', {
+                duration: 1,
+                text: text,
+                ease: 'none'
+            }, 0);
+            masterTl.add(tl);
+        });
+
     }, []);
 
     return (
@@ -76,10 +98,14 @@ function Home () {
                     <div className='content-title-home'>
                         <h1 className='title1-home'>Hello, It`s Me</h1>
                         <h1 className='title2-home'>Stevanus Gabriel</h1>
-                        <h1 className='title3-home'>And I am a Web Developer</h1>
+                        <h1 className='title3-home'>
+                            And I am a <span className='type-write1 type-cursor' style={{ color: '#70f0fe' }}></span>
+                        </h1>
                     </div>
                     <div className='content-description-home'>
-                        <p className='description-home'>I am a Web Developer</p>
+                        <p className='description-home'>
+                            I am a <span className='type-write2 type-cursor' style={{ color: '#70f0fe' }}></span>
+                        </p>
                     </div>
                     <div className='content-contact-home'>
                         <div className='content-icon-home-whatsapp'>
