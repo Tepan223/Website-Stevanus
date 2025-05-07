@@ -9,32 +9,32 @@ function Home () {
 
         if (isMobile) {
             tl.fromTo('.title1-home',
-                { opacity: 0, y: -40 },
-                { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }
+                { opacity: 0, y: -30 },
+                { opacity: 1, y: 0, duration: 0.3 }
             )
             .fromTo('.title2-home',
-                { opacity: 0, x: -30 },
-                { opacity: 1, x: 0, duration: 0.4, ease: 'power2.out' }
+                { opacity: 0, y: -30 },
+                { opacity: 1, y: 0, duration: 0.3 }
             )
             .fromTo('.title3-home',
-                { opacity: 0, x: 30 },
-                { opacity: 1, x: 0, duration: 0.4, ease: 'power2.out' }
+                { opacity: 0, y: -30 },
+                { opacity: 1, y: 0, duration: 0.3 }
             )
             .fromTo('.description-home',
-                { opacity: 0, y: 10 },
-                { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }
+                { opacity: 0 },
+                { opacity: 1, duration: 0.2 }
             )
             .fromTo('.content-contact-home > div',
-                { opacity: 0, y: 20 },
-                { opacity: 1, y: 0, duration: 0.25, stagger: 0.1, ease: 'power2.out' }
+                { opacity: 0, y: 10 },
+                { opacity: 1, y: 0, duration: 0.2, stagger: 0.05 }
             )
             .fromTo('.btn-home',
-                { opacity: 0, scale: 0.9 },
-                { opacity: 1, scale: 1, duration: 0.4, ease: 'back.out(1.7)' }
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 0.3 }
             )
             .fromTo('.img-home',
-                { opacity: 0, y: 30, scale: 0.8 },
-                { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: 'power2.out' }
+                { opacity: 0, scale: 0.6 },
+                { opacity: 1, scale: 1, duration: 0.4 }
             );
         } else {
             tl.fromTo('.title1-home',
