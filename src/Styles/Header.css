@@ -111,6 +111,7 @@
       padding: 0vw 13vw;
       box-shadow: 0 0 1.042vw #4ecdc4, 0 0 2.083vw #349090;
       animation: glow-border 1.5s infinite alternate;
+      z-index: 1000;
     }
 
     @keyframes glow-border {
