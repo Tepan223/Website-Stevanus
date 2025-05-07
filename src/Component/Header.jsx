@@ -4,43 +4,44 @@ import '../Styles/Header.css';
 
 function Header() {
   useEffect(() => {
-    // Title animation with bounce effect
+    // Title animation with a more dynamic bounce and fade-in effect
     gsap.fromTo(
       '.title', 
-      { opacity: 0, y: -80 }, 
-      { opacity: 1, y: 0, duration: 1, ease: "bounce.out", delay: 0.3 }
+      { opacity: 0, y: -100 }, 
+      { opacity: 1, y: 0, duration: 1.2, ease: "back.out(1.7)", delay: 0.3 }
     );
 
-    // Desktop navigation animation with slide-in effect
+    // Desktop navigation animation: slide-in from bottom with staggered effect
     gsap.fromTo(
       '.navigation.pc a', 
-      { opacity: 0, x: -100 }, 
-      { opacity: 1, x: 0, duration: 0.8, ease: "power4.out", delay: 0.8 }
+      { opacity: 0, y: 40 }, 
+      { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", stagger: 0.2, delay: 0.8 }
     );
 
-    // Mobile navigation logo animation with scale and fade
+    // Mobile navigation logo animation: scale and fade-in with stagger
     gsap.fromTo(
       '.navigation.mb .logo-img', 
-      { opacity: 0, scale: 0.5, y: 30 }, 
-      { opacity: 1, scale: 1, y: 0, duration: 0.8, ease: "power2.out", delay: 1 }
+      { opacity: 0, scale: 0.5, y: 40 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.8, ease: "power2.out", stagger: 0.2, delay: 1 }
     );
 
-    // Hover effect for desktop navigation links
+    // Hover effect for desktop navigation links: scale and color transition
     gsap.to('.navigation.pc a', {
-      opacity: 0.7,
+      opacity: 0.8,
       scale: 1.1,
-      duration: 0.2,
+      color: "#ff4081", // Color change on hover
+      duration: 0.3,
       ease: "power1.out",
       paused: true,
       repeat: -1,
       yoyo: true
     });
 
-    // Hover effect for mobile logo images
+    // Hover effect for mobile logo images: scale and opacity change
     gsap.to('.navigation.mb .logo-img', {
-      opacity: 0.7,
+      opacity: 0.8,
       scale: 1.1,
-      duration: 0.2,
+      duration: 0.3,
       ease: "power1.out",
       paused: true,
       repeat: -1,
