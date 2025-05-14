@@ -1,4 +1,153 @@
 .about{
     height: 100vh;
-    background-color: blue;
+    background-color:  #091d28;
+    padding: 4vw 5vw 4vw 5vw;
+    color: white;
 }
+
+.content-about{
+    display: flex;
+}
+
+.left-content-about{
+    width: 50%;
+}
+
+.right-content-about{
+    width: 50%;
+}
+
+.title-about{
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
+    color: #70f0fe;
+}
+
+.name-about{
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.description-about1{
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+
+.description-about2{
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+
+.description-about3{
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+
+.description-about4{
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+
+.description-about5{
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+
+.title-skills{
+    font-size: 4vw;
+    margin-bottom: 1.5vw; 
+    text-align: center;   
+}
+
+.content-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.icon-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.style-icon-skill{
+    width: 12vw;
+    height: 12vw;
+    margin-bottom: 1.5vw;
+}
+
+.name-skill{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.icon-skill {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .about{
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-about{
+        flex-direction: column-reverse;
+        gap: 7vw;
+    }
+
+    .left-content-about{
+        width: 100%;
+    }
+
+    .right-content-about{
+        width: 100%;
+    }
+
+    .title-about{
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .name-about{
+        font-size: 4vw;
+    }
+
+    .description-about1{
+        font-size: 4vw;
+    }
+
+    .description-about2{
+        font-size: 4vw;
+    }
+
+    .description-about3{
+        font-size: 4vw;
+    }
+
+    .description-about4{
+        font-size: 4vw;
+    }
+
+    .description-about5{
+        font-size: 4vw;
+    }
+
+    .title-skills{
+        font-size: 8vw;
+    }    
+
+    .style-icon-skill{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .name-skill{
+        font-size: 4vw;
+    }
+}   

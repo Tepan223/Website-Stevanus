@@ -129,8 +129,10 @@
     height: 35vw;
     display: flex;
     filter: drop-shadow(0 0 0.781vw #70f0fe);
-    transition: all 0.4s ease;
     border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .content-right-home {
@@ -142,7 +144,7 @@
   }
 
   .type-cursor::after {
-    content: '|';
+    content: '▋';
     font-weight: bold;
     animation: blink 1s step-start infinite;
     display: inline-block;

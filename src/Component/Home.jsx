@@ -36,8 +36,8 @@ function Home () {
                 { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.7)' }
             )
             .fromTo('.img-home',
-                { opacity: 0, y: 30, scale: 0.8 },
-                { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: 'power2.out' }
+                { opacity: 0, y: 30, scale: 0.7 },
+                { opacity: 1, y: 0, scale: 1, duration: 0.4 , ease: 'power2.out' }
             );
         } else {
             tl.fromTo('.title1-home',
