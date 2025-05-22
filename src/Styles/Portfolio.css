@@ -1,0 +1,89 @@
+.portfolio {
+    height: 100vh;
+    background-color: #091d28;
+    padding: 4vw 5vw;
+    color: white;
+}
+
+.content-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-portfolio {
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
+    color: #70f0fe;
+}
+
+.card-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.card-portfolio-img {
+    width: 27vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1.042vw #70f0fe, 0 0 1.563vw #70f0fe, 0 0 2.083vw #70f0fe;
+    transition: transform 0.3s ease;
+}
+
+.card-portfolio-img:hover {
+    box-shadow: 0 0 1.042vw #70f0fe, 0 0 1.563vw #ea4335;
+    transform: scale(1.1);
+}
+
+.link-card-portfolio {
+    width: 80%;
+    height: 80%;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.img-portfolio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+    .title-portfolio {
+        font-size: 6vw;
+        margin-bottom: 4vw;
+        text-align: center;
+    }
+
+    .card-portfolio {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .card-portfolio-img {
+        width: 80vw;
+        height: 45vw;
+        border-radius: 4vw;
+    }
+
+    .link-card-portfolio {
+        width: 90%;
+        height: 90%;
+        border-radius: 4vw;
+    }
+}
